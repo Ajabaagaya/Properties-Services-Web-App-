@@ -84,6 +84,7 @@ class CreateProperty extends CreateRecord
 
                FileUpload::make("primary_path")
                ->image()
+               ->label("الصورة الرئيسية للعقار")
                ->directory("primary_path/")
                ->preserveFilenames()
                ->reorderable()

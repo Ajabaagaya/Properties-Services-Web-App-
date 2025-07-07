@@ -32,7 +32,7 @@ class ListProperties extends ListRecords
     {
         return $table
             ->striped()
-            ->heading('Clients')
+            ->heading('قائمة العقارات')
             ->columns([
                 TextColumn::make("name")
                 ->label("الاسم")
@@ -42,9 +42,15 @@ class ListProperties extends ListRecords
                 TextColumn::make("type")
                 ->label("النوع") 
                 ->searchable(),
-                ImageColumn::make("primary_path")
-                ->circular()
-                ->label("الصورة"),
+                TextColumn::make("purpose")
+                ->label("الغرض") 
+                ->searchable(),
+                TextColumn::make("area_2m")
+                ->label(" الحجم") 
+                ->searchable(),
+                // ImageColumn::make("primary_path")
+                // ->circular()
+                // ->label("الصورة"),
 
 
                 TextColumn::make("status")
