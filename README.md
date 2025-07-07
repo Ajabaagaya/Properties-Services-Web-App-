@@ -21,7 +21,7 @@
 
 ### 🎯  Admin قائمة العقارات الخاص ب :
 
-(screenshots/property-listing.png)
+![Property Details](screenshots/property-listing.png)
 
 
 ### 📍 تحديد الموقع على الخريطة:
@@ -30,10 +30,10 @@
 
 ### 🖼️  تفاصيل العقار:
 
-![Property Details](screenshots/property-listing (3).png)
+![Property Details](screenshots/property-listing(3).png)
 ### 🖼️  تفاصيل العقار: responsive on the phone
 
-![Property Details](screenshots/property-listing (4).png)
+![Property Details](screenshots/property-listing(4).png)
 
 ---
 ---
