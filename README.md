@@ -21,8 +21,8 @@
 
 ### 🎯  Admin قائمة العقارات الخاص ب :
 
-![[Map Picker]]
-(screenshots/property-listing.png)
+![Map Picker](screenshots/property-listing.png)
+
 
 ### 📍 تحديد الموقع على الخريطة:
 
