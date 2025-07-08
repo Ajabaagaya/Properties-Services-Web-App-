@@ -37,7 +37,7 @@
 ## ⚙️ التثبيت
 
 ```bash
-git clone https://github.com/username/real-estate-platform.git
+git clone https://github.com/Ajabaagaya/Properties-Services-Web-App-
 cd real-estate-platform
 
 composer install
