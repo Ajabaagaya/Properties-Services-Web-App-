@@ -23,10 +23,13 @@
 
 ![Property Form](screenshots/property-listing(5).png)
 
+![Property List](screenshots/property-listing(6).png)
 
 ### 📍 تحديد الموقع على الخريطة:
 
 ![Map Picker](screenshots/map-picker.png)
+
+![Map Picker](screenshots/property-listing.png)
 
 ### 🖼️  تفاصيل العقار:
 
