@@ -31,13 +31,6 @@
 ## responsive  for phones
 ![Map Picker](screenshots/property-listing.png)
 
-### 🖼️  تفاصيل العقار:
-
-![Property Details](screenshots/property-list3.png)
-### 🖼️  تفاصيل العقار: responsive on the phone
-
-![Property Details](screenshots/property-list(4).png)
-
 ---
 ---
 
