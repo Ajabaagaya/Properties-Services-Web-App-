@@ -1,4 +1,4 @@
-# 🏠 Real Estate Platform - Laravel + Livewire + Filament + Tailwind
+# 🏠 Property Services Web Platform  - Laravel + Livewire + Filament + Tailwind
 
 نظام عقاري احترافي مبني باستخدام  Laravel 10 وLivewire ,Filament Admin , tailwindيمكّن المستخدمين من تأجير أو بيع العقارات مع واجهات جذابة ودعم للخرائط والصور، ,وصلاحيات مخصصة لكل من المالك والمستأجر والإدارة . لا زال في مرح. 
  
@@ -18,6 +18,8 @@
 ---
 
 ## 🖼️ صور من الواجهة
+## Tanant Landing Page
+![Property Form](screenshots/tanantlandingpage.png)
 
 ### 🎯  Admin قائمة العقارات الخاص ب :
 
