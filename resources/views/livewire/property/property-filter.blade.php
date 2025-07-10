@@ -36,12 +36,12 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     @forelse($properties as $property)
     
-    <div class="bg-white shadow-md rounded overflow-hidden border hover:shadow-lg transition">
+    <div class="bg-white h-64  shadow-md rounded overflow-hidden border hover:shadow-lg transition">
         <a href="/property/{{ $property->id }} ">
             @if($property->primary_path)
-            <img src="{{ asset('storage/'.$property->primary_path)}}"  class="w-full h-48 object-cover" />
+            <img src="{{ asset('storage/'.$property->primary_path)}}"  class="object-cover" />
             @else
-            <img src="{{asset('imgs/me.jpg')}}"  class="w-full h-48 object-cover" />
+            <img src="{{asset('imgs/me.jpg')}}"  class="w-full h-32 object-cover" />
             @endif
             <div class="p-4">
                 

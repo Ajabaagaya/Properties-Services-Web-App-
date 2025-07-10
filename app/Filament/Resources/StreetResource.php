@@ -25,7 +25,8 @@ class StreetResource extends Resource
     protected static ?string $model = Street::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?string $modelLabel = 'الشوارع';
+    protected static ?string $navigationLabel = 'الشوارع';
     public static function form(Form $form): Form
     {
         return $form

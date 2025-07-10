@@ -11,10 +11,10 @@
 
 @section('content')
    <div class="max-w-6xl mx-auto p-6">
-        <div class="w-78 h-72 rounded-full overflow-hidden shadow">
+        <div class="rounded-full overflow-hidden shadow">
             <img src="{{ asset('storage/'.$property->primary_path)}}"  
             id="mainImage"
-            class="w-78 h-78 rounded-xl object-cover transition duration-300 " />
+            class="w-3xs rounded-xl object-cover transition duration-300 " />
 
         </div>
 
@@ -24,7 +24,7 @@
                 <i class="fas fa-building text-blue-600"></i>
             </h1>
              <p class="text-2xl text-center font-bold text-gray-800">
-                {{ $property->created_at }}
+                {{ $property->created_at->format('I \o\f F Y h:i:s A') }}
                 <i class="fas fa-clock text-blue-600"></i>
              </p>
         </div>
@@ -76,6 +76,8 @@
                 <i class="fas fa-location-dot text-blue-400 text-xl"></i>
                 <div class="text-gray-500 text-sm mt-1"> المدينة</div>
                 <div class="text-lg font-bold">صنعاء</div>
+                <div class="text-lg font-bold">{{ $property->longitude }}</div>
+
             </div>
         </div>
         
@@ -112,8 +114,11 @@
                 <i class="fas fa-map-marked-alt"></i>
                 الموقع على الخريطة
             </h2>
-            <div style="height: 400px;" id="map" class="w-full rounded-lg shadow"></div>
-
+            {{-- <x-map-picker 
+            :lat=" $property->altitude" 
+            :lng="$property->longitude" 
+            :editable="false" 
+            :height="'400px'"/> --}}
         </div>
     </div>
     <div class="flex flex-row justify-around bg-white py-4">
@@ -149,14 +154,7 @@
            img.classList.remove("border-transparent");
            img.classList.add("border-bg-blue-500");
           }
-           document.addEventListener("DOMContentLoaded",function(){
-            var map = L.map('map').setView([15.3694, 44.1910], 30);
-             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-             attribution:'$copy; OpenStreetMap contributors'}).addTo(map);
-             L.marker([15.3694, 44.1910]).addTo(map)
-             .bindPopup("فيلا فاخرة في صنعاء")
-             .openPopup();
-           })
+   
    </script>
 
    @endpush

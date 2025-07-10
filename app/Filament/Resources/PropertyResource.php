@@ -107,13 +107,15 @@ class PropertyResource extends Resource
             ->dehydrated(true),
                 
             ViewField::make('map_picker')
-            ->label("المواقع على الخريطة")
-            ->view('forms.components.map-picker')
+                ->label("المواقع على الخريطة")
+                ->view('components.map-picker')
             ->dehydrated(false)
-            ->columnSpanFull(),
-            // ->extraAttributes([
-            //     'data-lat-field'=>'altitude',
-            //     'data-lng-field'=>'longitude',
+            ->columnSpanFull()
+            ->extraAttributes([
+                    'lat'=>  15.3821 ?? null,
+                    'lng'=>14.1910 ?? null,
+                    "editable"=>true,
+            ]),
         ]);
     }
     
@@ -122,6 +124,7 @@ class PropertyResource extends Resource
     {
         return [
           RelationManagers\ApartmentRelationManager::class,
+          RelationManagers\VillaRelationManager::class,
           RelationManagers\PhotosRelationManager::class,
         ];
     }

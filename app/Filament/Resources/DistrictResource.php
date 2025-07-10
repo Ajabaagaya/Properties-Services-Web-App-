@@ -17,7 +17,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class DistrictResource extends Resource
 {
     protected static ?string $model = District::class;
-
+    protected static ?string $modelLabel = 'المديريات';
+    protected static ?string $navigationLabel='المديريات';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     public static function getNavigationBadge():?string{
         return static::getModel()::count();
